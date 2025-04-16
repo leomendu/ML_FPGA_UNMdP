@@ -1,0 +1,720 @@
+
+*** Running vivado
+    with args -log MLZedboard_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MLZedboard_wrapper.tcl
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source MLZedboard_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/core-comblock/src'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab5/hlsPrj-model__mnistPQKD/myproject_prj/solution1/impl'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+Command: synth_design -top MLZedboard_wrapper -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 48354
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1985.844 ; gain = 371.770 ; free physical = 225 ; free virtual = 7036
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1429.804; parent = 1226.287; children = 203.517
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2982.723; parent = 2009.660; children = 973.062
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'MLZedboard_wrapper' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/hdl/MLZedboard_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'MLZedboard' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/synth/MLZedboard.v:12]
+INFO: [Synth 8-638] synthesizing module 'MLZedboard_comblock_0_0' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_comblock_0_0/synth/MLZedboard_comblock_0_0.vhd:98]
+	Parameter REGS_IN_ENA bound to: 1 - type: bool 
+	Parameter REGS_IN_DWIDTH bound to: 32 - type: integer 
+	Parameter REGS_IN_DEPTH bound to: 4 - type: integer 
+	Parameter REGS_OUT_ENA bound to: 1 - type: bool 
+	Parameter REGS_OUT_DWIDTH bound to: 32 - type: integer 
+	Parameter REGS_OUT_DEPTH bound to: 4 - type: integer 
+	Parameter DRAM_IO_ENA bound to: 0 - type: bool 
+	Parameter DRAM_IO_DWIDTH bound to: 16 - type: integer 
+	Parameter DRAM_IO_AWIDTH bound to: 16 - type: integer 
+	Parameter DRAM_IO_DEPTH bound to: 65535 - type: integer 
+	Parameter FIFO_IN_ENA bound to: 0 - type: bool 
+	Parameter FIFO_IN_DWIDTH bound to: 16 - type: integer 
+	Parameter FIFO_IN_DEPTH bound to: 1024 - type: integer 
+	Parameter FIFO_IN_AFOFFSET bound to: 1 - type: integer 
+	Parameter FIFO_IN_AEOFFSET bound to: 1 - type: integer 
+	Parameter FIFO_OUT_ENA bound to: 1 - type: bool 
+	Parameter FIFO_OUT_DWIDTH bound to: 32 - type: integer 
+	Parameter FIFO_OUT_DEPTH bound to: 1024 - type: integer 
+	Parameter FIFO_OUT_AFOFFSET bound to: 1 - type: integer 
+	Parameter FIFO_OUT_AEOFFSET bound to: 1 - type: integer 
+	Parameter C_AXIF_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIF_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIF_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIF_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIF_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIF_BUSER_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'axi_comblock' declared at '/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/axi_comblock.vhdl:17' bound to instance 'U0' of component 'axi_comblock' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_comblock_0_0/synth/MLZedboard_comblock_0_0.vhd:302]
+INFO: [Synth 8-638] synthesizing module 'axi_comblock' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/axi_comblock.vhdl:186]
+INFO: [Synth 8-638] synthesizing module 'AXIL' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/axil.vhdl:91]
+INFO: [Synth 8-256] done synthesizing module 'AXIL' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/axil.vhdl:91]
+INFO: [Synth 8-638] synthesizing module 'AXIF' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/axif.vhdl:173]
+INFO: [Synth 8-256] done synthesizing module 'AXIF' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/axif.vhdl:173]
+INFO: [Synth 8-638] synthesizing module 'ComBlock' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/comblock.vhdl:125]
+INFO: [Synth 8-638] synthesizing module 'FIFO' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/fifo.vhdl:58]
+INFO: [Synth 8-638] synthesizing module 'tdpram' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/tdpram.vhdl:37]
+INFO: [Synth 8-256] done synthesizing module 'tdpram' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/tdpram.vhdl:37]
+INFO: [Synth 8-638] synthesizing module 'GraySync' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/graysync.vhdl:29]
+INFO: [Synth 8-256] done synthesizing module 'GraySync' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/graysync.vhdl:29]
+INFO: [Synth 8-226] default block is never used [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/fifo.vhdl:120]
+INFO: [Synth 8-256] done synthesizing module 'FIFO' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/fifo.vhdl:58]
+INFO: [Synth 8-256] done synthesizing module 'ComBlock' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/comblock.vhdl:125]
+INFO: [Synth 8-256] done synthesizing module 'axi_comblock' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/axi_comblock.vhdl:186]
+INFO: [Synth 8-256] done synthesizing module 'MLZedboard_comblock_0_0' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_comblock_0_0/synth/MLZedboard_comblock_0_0.vhd:98]
+WARNING: [Synth 8-7071] port 'reg2_o' of module 'MLZedboard_comblock_0_0' is unconnected for instance 'comblock_0' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/synth/MLZedboard.v:146]
+WARNING: [Synth 8-7071] port 'reg3_o' of module 'MLZedboard_comblock_0_0' is unconnected for instance 'comblock_0' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/synth/MLZedboard.v:146]
+WARNING: [Synth 8-7071] port 'fifo_empty_o' of module 'MLZedboard_comblock_0_0' is unconnected for instance 'comblock_0' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/synth/MLZedboard.v:146]
+WARNING: [Synth 8-7071] port 'fifo_aempty_o' of module 'MLZedboard_comblock_0_0' is unconnected for instance 'comblock_0' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/synth/MLZedboard.v:146]
+WARNING: [Synth 8-7071] port 'fifo_underflow_o' of module 'MLZedboard_comblock_0_0' is unconnected for instance 'comblock_0' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/synth/MLZedboard.v:146]
+WARNING: [Synth 8-7023] instance 'comblock_0' of module 'MLZedboard_comblock_0_0' has 37 connections declared, but only 32 given [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/synth/MLZedboard.v:146]
+INFO: [Synth 8-6157] synthesizing module 'MLZedboard_inference_0_0' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_inference_0_0/synth/MLZedboard_inference_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'inference' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference.v:10]
+INFO: [Synth 8-6157] synthesizing module 'inference_inference_Pipeline_VITIS_LOOP_41_1' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_inference_Pipeline_VITIS_LOOP_41_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'inference_mul_32s_34ns_65_1_1' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_mul_32s_34ns_65_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_mul_32s_34ns_65_1_1' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_mul_32s_34ns_65_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'inference_flow_control_loop_pipe_sequential_init' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_flow_control_loop_pipe_sequential_init.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_flow_control_loop_pipe_sequential_init' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_flow_control_loop_pipe_sequential_init.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_inference_Pipeline_VITIS_LOOP_41_1' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_inference_Pipeline_VITIS_LOOP_41_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'inference_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'inference_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_16_7_4_0_0_linear_config4_s' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_16_7_4_0_0_linear_config4_s.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_16_7_4_0_0_linear_config4_s' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_16_7_4_0_0_linear_config4_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config5_s' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config5_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'inference_mul_16s_5s_19_1_1' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_mul_16s_5s_19_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_mul_16s_5s_19_1_1' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_mul_16s_5s_19_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'inference_mul_16s_5ns_19_1_1' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_mul_16s_5ns_19_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_mul_16s_5ns_19_1_1' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_mul_16s_5ns_19_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config5_s' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config5_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_16_7_4_0_0_linear_config7_s' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_16_7_4_0_0_linear_config7_s.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_16_7_4_0_0_linear_config7_s' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_16_7_4_0_0_linear_config7_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_16_7_4_0_0_linear_config10_s' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_16_7_4_0_0_linear_config10_s.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_16_7_4_0_0_linear_config10_s' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_16_7_4_0_0_linear_config10_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config11_s' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config11_s.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config11_s' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config11_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'inference_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config13_s' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config13_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'inference_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config13_s_sigmoid_tabkb' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config13_s_sigmoid_tabkb.v:7]
+INFO: [Synth 8-3876] $readmem data file './inference_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config13_s_sigmoid_tabkb.dat' is read successfully [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config13_s_sigmoid_tabkb.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'inference_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config13_s_sigmoid_tabkb' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config13_s_sigmoid_tabkb.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'inference_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config13_s' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config13_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'inference_dcmp_64ns_64ns_1_2_no_dsp_1' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_dcmp_64ns_64ns_1_2_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'inference_dcmp_64ns_64ns_1_2_no_dsp_1_ip' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/ip/inference_dcmp_64ns_64ns_1_2_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [/tools/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:78971]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (0#1) [/tools/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:78971]
+INFO: [Synth 8-6155] done synthesizing module 'inference_dcmp_64ns_64ns_1_2_no_dsp_1_ip' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/ip/inference_dcmp_64ns_64ns_1_2_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'inference_dcmp_64ns_64ns_1_2_no_dsp_1' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_dcmp_64ns_64ns_1_2_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'inference_regslice_both' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_regslice_both' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'inference_regslice_both__parameterized0' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_regslice_both__parameterized0' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'inference_regslice_both__parameterized1' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_regslice_both__parameterized1' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'inference_regslice_both__parameterized2' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_regslice_both__parameterized2' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'inference_regslice_both__parameterized3' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_regslice_both__parameterized3' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'inference_regslice_both__parameterized4' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_regslice_both__parameterized4' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'MLZedboard_inference_0_0' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_inference_0_0/synth/MLZedboard_inference_0_0.v:53]
+WARNING: [Synth 8-7071] port 'result_ap_vld' of module 'MLZedboard_inference_0_0' is unconnected for instance 'inference_0' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/synth/MLZedboard.v:179]
+WARNING: [Synth 8-7071] port 'ap_done' of module 'MLZedboard_inference_0_0' is unconnected for instance 'inference_0' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/synth/MLZedboard.v:179]
+WARNING: [Synth 8-7071] port 'ap_idle' of module 'MLZedboard_inference_0_0' is unconnected for instance 'inference_0' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/synth/MLZedboard.v:179]
+WARNING: [Synth 8-7071] port 'ap_ready' of module 'MLZedboard_inference_0_0' is unconnected for instance 'inference_0' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/synth/MLZedboard.v:179]
+WARNING: [Synth 8-7071] port 'input_r_TREADY' of module 'MLZedboard_inference_0_0' is unconnected for instance 'inference_0' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/synth/MLZedboard.v:179]
+WARNING: [Synth 8-7023] instance 'inference_0' of module 'MLZedboard_inference_0_0' has 17 connections declared, but only 12 given [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/synth/MLZedboard.v:179]
+INFO: [Synth 8-6157] synthesizing module 'MLZedboard_processing_system7_0_0' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_processing_system7_0_0/synth/MLZedboard_processing_system7_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:152]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/tools/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [/tools/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6157] synthesizing module 'BIBUF' [/tools/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:729]
+INFO: [Synth 8-6155] done synthesizing module 'BIBUF' (0#1) [/tools/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:729]
+INFO: [Synth 8-6157] synthesizing module 'PS7' [/tools/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:109424]
+INFO: [Synth 8-6155] done synthesizing module 'PS7' (0#1) [/tools/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:109424]
+INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:152]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_processing_system7_0_0/synth/MLZedboard_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_processing_system7_0_0/synth/MLZedboard_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_processing_system7_0_0/synth/MLZedboard_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'S_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_processing_system7_0_0/synth/MLZedboard_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'S_AXI_ACP_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_processing_system7_0_0/synth/MLZedboard_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_processing_system7_0_0/synth/MLZedboard_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_processing_system7_0_0/synth/MLZedboard_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_processing_system7_0_0/synth/MLZedboard_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'S_AXI_HP3_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_processing_system7_0_0/synth/MLZedboard_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'DMA0_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_processing_system7_0_0/synth/MLZedboard_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_processing_system7_0_0/synth/MLZedboard_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_processing_system7_0_0/synth/MLZedboard_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_processing_system7_0_0/synth/MLZedboard_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_processing_system7_0_0/synth/MLZedboard_processing_system7_0_0.v:323]
+INFO: [Synth 8-6155] done synthesizing module 'MLZedboard_processing_system7_0_0' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_processing_system7_0_0/synth/MLZedboard_processing_system7_0_0.v:53]
+WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'MLZedboard_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/synth/MLZedboard.v:192]
+WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'MLZedboard_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/synth/MLZedboard.v:192]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'MLZedboard_processing_system7_0_0' has 65 connections declared, but only 63 given [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/synth/MLZedboard.v:192]
+INFO: [Synth 8-6157] synthesizing module 'MLZedboard_ps7_0_axi_periph_0' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/synth/MLZedboard.v:333]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_4EWTW4' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/synth/MLZedboard.v:648]
+INFO: [Synth 8-6157] synthesizing module 'MLZedboard_auto_pc_0' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_auto_pc_0/synth/MLZedboard_auto_pc_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_axi_protocol_converter' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4807]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4225]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_aw_channel' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3970]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_cmd_translator' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3463]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_incr_cmd' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3091]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_incr_cmd' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3091]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_wrap_cmd' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2901]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_wrap_cmd' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2901]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_cmd_translator' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3463]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_wr_cmd_fsm' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3223]
+INFO: [Synth 8-226] default block is never used [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3277]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_wr_cmd_fsm' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3223]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_aw_channel' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3970]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_b_channel' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3605]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_simple_fifo' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_simple_fifo' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_simple_fifo__parameterized0' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_simple_fifo__parameterized0' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_b_channel' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3605]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_ar_channel' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4081]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_rd_cmd_fsm' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3333]
+INFO: [Synth 8-226] default block is never used [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3395]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_rd_cmd_fsm' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3333]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_ar_channel' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4081]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_r_channel' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3810]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_simple_fifo__parameterized1' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_simple_fifo__parameterized1' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_simple_fifo__parameterized2' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_simple_fifo__parameterized2' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_r_channel' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3810]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axi_register_slice' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:3725]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized0' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized0' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized1' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized1' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized2' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized2' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axi_register_slice' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:3725]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_27_axi_register_slice' is unconnected for instance 'SI_REG' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4392]
+WARNING: [Synth 8-7023] instance 'SI_REG' of module 'axi_register_slice_v2_1_27_axi_register_slice' has 93 connections declared, but only 92 given [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4392]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axi_register_slice__parameterized0' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:3725]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized3' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized3' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized4' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized4' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized5' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized5' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized6' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized6' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axi_register_slice__parameterized0' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:3725]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_27_axi_register_slice' is unconnected for instance 'MI_REG' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4647]
+WARNING: [Synth 8-7023] instance 'MI_REG' of module 'axi_register_slice_v2_1_27_axi_register_slice' has 93 connections declared, but only 92 given [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4647]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4225]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_axi_protocol_converter' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4807]
+INFO: [Synth 8-6155] done synthesizing module 'MLZedboard_auto_pc_0' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_auto_pc_0/synth/MLZedboard_auto_pc_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_4EWTW4' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/synth/MLZedboard.v:648]
+INFO: [Synth 8-6155] done synthesizing module 'MLZedboard_ps7_0_axi_periph_0' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/synth/MLZedboard.v:333]
+INFO: [Synth 8-638] synthesizing module 'MLZedboard_rst_ps7_0_100M_0' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_rst_ps7_0_100M_0/synth/MLZedboard_rst_ps7_0_100M_0.vhd:74]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_rst_ps7_0_100M_0/synth/MLZedboard_rst_ps7_0_100M_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
+INFO: [Synth 8-638] synthesizing module 'lpf' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-3491] module 'SRL16' declared at '/tools/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131628' bound to instance 'POR_SRL_I' of component 'SRL16' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [/tools/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131628]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (0#1) [/tools/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131628]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'MLZedboard_rst_ps7_0_100M_0' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_rst_ps7_0_100M_0/synth/MLZedboard_rst_ps7_0_100M_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'MLZedboard_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/synth/MLZedboard.v:320]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'MLZedboard_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/synth/MLZedboard.v:320]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'MLZedboard_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/synth/MLZedboard.v:320]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'MLZedboard_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/synth/MLZedboard.v:320]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'MLZedboard_rst_ps7_0_100M_0' has 10 connections declared, but only 6 given [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/synth/MLZedboard.v:320]
+INFO: [Synth 8-6157] synthesizing module 'MLZedboard_xlconstant_0_0' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_xlconstant_0_0/synth/MLZedboard_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MLZedboard_xlconstant_0_0' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_xlconstant_0_0/synth/MLZedboard_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'MLZedboard_xlconstant_1_0' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_xlconstant_1_0/synth/MLZedboard_xlconstant_1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MLZedboard_xlconstant_1_0' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_xlconstant_1_0/synth/MLZedboard_xlconstant_1_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'MLZedboard' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/synth/MLZedboard.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'MLZedboard_wrapper' (0#1) [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/hdl/MLZedboard_wrapper.v:12]
+WARNING: [Synth 8-6014] Unused sequential element fifo_in_clear_reg was removed.  [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/comblock.vhdl:361]
+WARNING: [Synth 8-6014] Unused sequential element fifo_in_under_r_reg was removed.  [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/comblock.vhdl:379]
+WARNING: [Synth 8-3848] Net ram_data_o in module/entity ComBlock does not have driver. [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/comblock.vhdl:87]
+WARNING: [Synth 8-3848] Net fifo_in_full_o in module/entity ComBlock does not have driver. [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/comblock.vhdl:93]
+WARNING: [Synth 8-3848] Net fifo_in_afull_o in module/entity ComBlock does not have driver. [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/comblock.vhdl:94]
+WARNING: [Synth 8-3848] Net fifo_in_overflow_o in module/entity ComBlock does not have driver. [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/comblock.vhdl:95]
+WARNING: [Synth 8-3848] Net mem_data_o in module/entity ComBlock does not have driver. [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/comblock.vhdl:121]
+WARNING: [Synth 8-6014] Unused sequential element state_r1_reg was removed.  [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3383]
+WARNING: [Synth 8-6014] Unused sequential element s_arlen_r_reg was removed.  [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3384]
+WARNING: [Synth 8-7129] Port prmry_aclk in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_resetn in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[1] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[0] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scndry_resetn in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module axi_register_slice_v2_1_27_axic_register_slice__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axi_register_slice_v2_1_27_axic_register_slice__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module axi_register_slice_v2_1_27_axic_register_slice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axi_register_slice_v2_1_27_axic_register_slice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module axi_register_slice_v2_1_27_axic_register_slice__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axi_register_slice_v2_1_27_axic_register_slice__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module axi_register_slice_v2_1_27_axic_register_slice__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axi_register_slice_v2_1_27_axic_register_slice__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bid[0] in module axi_infrastructure_v1_1_0_vector2axi__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_buser[0] in module axi_infrastructure_v1_1_0_vector2axi__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rid[0] in module axi_infrastructure_v1_1_0_vector2axi__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rlast in module axi_infrastructure_v1_1_0_vector2axi__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_ruser[0] in module axi_infrastructure_v1_1_0_vector2axi__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awid[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[7] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[6] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[5] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[4] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[3] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlock[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[3] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[3] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[3] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awuser[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wlast in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wuser[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arid[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[7] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[6] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[5] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[4] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[3] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arsize[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arsize[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arsize[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arburst[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arburst[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlock[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[3] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[3] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[3] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_aruser[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk2x in module axi_register_slice_v2_1_27_axi_register_slice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module axi_register_slice_v2_1_27_axic_register_slice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axi_register_slice_v2_1_27_axic_register_slice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_buser[0] in module axi_infrastructure_v1_1_0_vector2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_ruser[0] in module axi_infrastructure_v1_1_0_vector2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[3] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[2] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awuser[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wuser[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[3] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[2] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_aruser[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk2x in module axi_register_slice_v2_1_27_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_arlen[7] in module axi_protocol_converter_v2_1_27_b2s_rd_cmd_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_arlen[6] in module axi_protocol_converter_v2_1_27_b2s_rd_cmd_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_arlen[5] in module axi_protocol_converter_v2_1_27_b2s_rd_cmd_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_arlen[4] in module axi_protocol_converter_v2_1_27_b2s_rd_cmd_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_arlen[3] in module axi_protocol_converter_v2_1_27_b2s_rd_cmd_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_arlen[2] in module axi_protocol_converter_v2_1_27_b2s_rd_cmd_fsm is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2392.469 ; gain = 778.395 ; free physical = 546 ; free virtual = 6955
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1654.434; parent = 1450.917; children = 203.517
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3365.535; parent = 2392.473; children = 973.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2398.406 ; gain = 784.332 ; free physical = 542 ; free virtual = 6951
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1654.434; parent = 1450.917; children = 203.517
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3371.473; parent = 2398.410; children = 973.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2398.406 ; gain = 784.332 ; free physical = 542 ; free virtual = 6951
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1654.434; parent = 1450.917; children = 203.517
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3371.473; parent = 2398.410; children = 973.062
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2452.344 ; gain = 0.000 ; free physical = 437 ; free virtual = 6847
+INFO: [Netlist 29-17] Analyzing 93 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_processing_system7_0_0/MLZedboard_processing_system7_0_0.xdc] for cell 'MLZedboard_i/processing_system7_0/inst'
+Finished Parsing XDC File [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_processing_system7_0_0/MLZedboard_processing_system7_0_0.xdc] for cell 'MLZedboard_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_processing_system7_0_0/MLZedboard_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MLZedboard_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/MLZedboard_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_rst_ps7_0_100M_0/MLZedboard_rst_ps7_0_100M_0_board.xdc] for cell 'MLZedboard_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_rst_ps7_0_100M_0/MLZedboard_rst_ps7_0_100M_0_board.xdc] for cell 'MLZedboard_i/rst_ps7_0_100M/U0'
+Parsing XDC File [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_rst_ps7_0_100M_0/MLZedboard_rst_ps7_0_100M_0.xdc] for cell 'MLZedboard_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_rst_ps7_0_100M_0/MLZedboard_rst_ps7_0_100M_0.xdc] for cell 'MLZedboard_i/rst_ps7_0_100M/U0'
+Parsing XDC File [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MLZedboard_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/MLZedboard_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2926.961 ; gain = 0.000 ; free physical = 244 ; free virtual = 6188
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 13 instances were transformed.
+  FDR => FDRE: 12 instances
+  SRL16 => SRL16E: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2926.961 ; gain = 0.000 ; free physical = 244 ; free virtual = 6188
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 2936.328 ; gain = 1322.254 ; free physical = 977 ; free virtual = 6922
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1669.064; parent = 1465.579; children = 203.517
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3877.379; parent = 2904.316; children = 973.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 2936.328 ; gain = 1322.254 ; free physical = 977 ; free virtual = 6922
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1669.064; parent = 1465.579; children = 203.517
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3877.379; parent = 2904.316; children = 973.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for MLZedboard_i/processing_system7_0/inst. (constraint file  /home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.runs/synth_1/dont_touch.xdc, line 34).
+Applied set_property KEEP_HIERARCHY = SOFT for MLZedboard_i/rst_ps7_0_100M/U0. (constraint file  /home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.runs/synth_1/dont_touch.xdc, line 39).
+Applied set_property KEEP_HIERARCHY = SOFT for MLZedboard_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for MLZedboard_i/comblock_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for MLZedboard_i/inference_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for MLZedboard_i/processing_system7_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for MLZedboard_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for MLZedboard_i/ps7_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for MLZedboard_i/rst_ps7_0_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for MLZedboard_i/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for MLZedboard_i/xlconstant_1. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 2936.328 ; gain = 1322.254 ; free physical = 980 ; free virtual = 6923
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1669.064; parent = 1465.579; children = 203.517
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3877.379; parent = 2904.316; children = 973.062
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_ln1513_reg_23186_reg' and it is trimmed from '65' to '46' bits. [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference_inference_Pipeline_VITIS_LOOP_41_1.v:9354]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm_reg_13134_reg' and it is trimmed from '63' to '52' bits. [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/6fba/hdl/verilog/inference.v:4409]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_protocol_converter_v2_1_27_b2s_wr_cmd_fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_protocol_converter_v2_1_27_b2s_rd_cmd_fsm'
+INFO: [Synth 8-3971] The signal "tdpram:/ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 SM_IDLE |                               01 |                               00
+               SM_CMD_EN |                               11 |                               01
+         SM_CMD_ACCEPTED |                               10 |                               10
+            SM_DONE_WAIT |                               00 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_protocol_converter_v2_1_27_b2s_wr_cmd_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 SM_IDLE |                               01 |                               00
+               SM_CMD_EN |                               11 |                               01
+         SM_CMD_ACCEPTED |                               10 |                               10
+                 SM_DONE |                               00 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_protocol_converter_v2_1_27_b2s_rd_cmd_fsm'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 2936.328 ; gain = 1322.254 ; free physical = 1036 ; free virtual = 6984
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1669.064; parent = 1465.579; children = 203.517
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3877.379; parent = 2904.316; children = 973.062
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'MLZedboard_i/inference_0/inst/dcmp_64ns_64ns_1_2_no_dsp_1_U1588/inference_dcmp_64ns_64ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (floating_point_v7_1_15_delay__parameterized5) to 'MLZedboard_i/inference_0/inst/dcmp_64ns_64ns_1_2_no_dsp_1_U1588/inference_dcmp_64ns_64ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'MLZedboard_i/inference_0/inst/dcmp_64ns_64ns_1_2_no_dsp_1_U1588/inference_dcmp_64ns_64ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (floating_point_v7_1_15_delay__parameterized5) to 'MLZedboard_i/inference_0/inst/dcmp_64ns_64ns_1_2_no_dsp_1_U1588/inference_dcmp_64ns_64ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'MLZedboard_i/inference_0/inst/dcmp_64ns_64ns_1_2_no_dsp_1_U1588/inference_dcmp_64ns_64ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (floating_point_v7_1_15_delay__parameterized5) to 'MLZedboard_i/inference_0/inst/dcmp_64ns_64ns_1_2_no_dsp_1_U1588/inference_dcmp_64ns_64ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'MLZedboard_i/inference_0/inst/dcmp_64ns_64ns_1_2_no_dsp_1_U1588/inference_dcmp_64ns_64ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (floating_point_v7_1_15_delay__parameterized5) to 'MLZedboard_i/inference_0/inst/dcmp_64ns_64ns_1_2_no_dsp_1_U1588/inference_dcmp_64ns_64ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1731]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.gen/sources_1/bd/MLZedboard/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1731]
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (FDRE_inst) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (BSR_OUT_DFF[0].FDRE_BSR) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 2936.328 ; gain = 1322.254 ; free physical = 958 ; free virtual = 6931
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1669.064; parent = 1465.579; children = 203.517
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3877.379; parent = 2904.316; children = 973.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:57 . Memory (MB): peak = 2936.328 ; gain = 1322.254 ; free physical = 705 ; free virtual = 6685
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1804.570; parent = 1601.116; children = 203.517
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3877.379; parent = 2904.316; children = 973.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:58 . Memory (MB): peak = 2936.328 ; gain = 1322.254 ; free physical = 666 ; free virtual = 6647
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1831.516; parent = 1628.062; children = 203.517
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3877.379; parent = 2904.316; children = 973.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance MLZedboard_i/comblock_0/U0/comblock_i/fifo_out_g.fifo_out_i/i_memory/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:01:01 . Memory (MB): peak = 2936.328 ; gain = 1322.254 ; free physical = 665 ; free virtual = 6645
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1831.516; parent = 1628.062; children = 203.517
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3877.379; parent = 2904.316; children = 973.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:01:04 . Memory (MB): peak = 2936.328 ; gain = 1322.254 ; free physical = 665 ; free virtual = 6645
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1831.516; parent = 1628.062; children = 203.517
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3877.379; parent = 2904.316; children = 973.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:01:04 . Memory (MB): peak = 2936.328 ; gain = 1322.254 ; free physical = 665 ; free virtual = 6645
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1831.516; parent = 1628.062; children = 203.517
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3877.379; parent = 2904.316; children = 973.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:01:04 . Memory (MB): peak = 2936.328 ; gain = 1322.254 ; free physical = 665 ; free virtual = 6645
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1831.516; parent = 1628.062; children = 203.517
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3877.379; parent = 2904.316; children = 973.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:01:04 . Memory (MB): peak = 2936.328 ; gain = 1322.254 ; free physical = 665 ; free virtual = 6645
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1831.516; parent = 1628.062; children = 203.517
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3877.379; parent = 2904.316; children = 973.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:01:05 . Memory (MB): peak = 2936.328 ; gain = 1322.254 ; free physical = 665 ; free virtual = 6645
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1831.516; parent = 1628.062; children = 203.517
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3877.379; parent = 2904.316; children = 973.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:01:05 . Memory (MB): peak = 2936.328 ; gain = 1322.254 ; free physical = 665 ; free virtual = 6645
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1831.516; parent = 1628.062; children = 203.517
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3877.379; parent = 2904.316; children = 973.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++---------------------------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                  | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------------------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|inference_mul_16s_5ns_19_1_1                 | A'*B         | 30     | 4      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|inference_mul_16s_5ns_19_1_1                 | A'*B         | 30     | 4      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|inference_inference_Pipeline_VITIS_LOOP_41_1 | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|inference_inference_Pipeline_VITIS_LOOP_41_1 | PCIN>>17+A*B | 16     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|inference_inference_Pipeline_VITIS_LOOP_41_1 | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|inference_inference_Pipeline_VITIS_LOOP_41_1 | PCIN>>17+A*B | 0      | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++---------------------------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BIBUF    |   130|
+|2     |BUFG     |     1|
+|3     |CARRY4   |  1225|
+|4     |DSP48E1  |     6|
+|6     |LUT1     |  3610|
+|7     |LUT2     |   691|
+|8     |LUT3     |   314|
+|9     |LUT4     |   318|
+|10    |LUT5     |   176|
+|11    |LUT6     |   881|
+|12    |MUXCY    |    80|
+|13    |PS7      |     1|
+|14    |RAMB18E1 |     1|
+|15    |RAMB36E1 |     1|
+|16    |SRL16    |     1|
+|17    |SRL16E   |    16|
+|18    |SRLC32E  |    45|
+|19    |FDR      |     4|
+|20    |FDRE     |  4604|
+|21    |FDSE     |    28|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:01:05 . Memory (MB): peak = 2936.328 ; gain = 1322.254 ; free physical = 665 ; free virtual = 6645
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1831.516; parent = 1628.062; children = 203.517
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3877.379; parent = 2904.316; children = 973.062
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:47 ; elapsed = 00:00:53 . Memory (MB): peak = 2936.328 ; gain = 784.332 ; free physical = 669 ; free virtual = 6648
+Synthesis Optimization Complete : Time (s): cpu = 00:00:56 ; elapsed = 00:01:05 . Memory (MB): peak = 2936.328 ; gain = 1322.254 ; free physical = 669 ; free virtual = 6648
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2936.328 ; gain = 0.000 ; free physical = 781 ; free virtual = 6761
+INFO: [Netlist 29-17] Analyzing 1318 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2936.328 ; gain = 0.000 ; free physical = 781 ; free virtual = 6761
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 26 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 21 instances
+  FDR => FDRE: 4 instances
+  SRL16 => SRL16E: 1 instance 
+
+Synth Design complete, checksum: c9ffc2e2
+INFO: [Common 17-83] Releasing license: Synthesis
+222 Infos, 162 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:01 ; elapsed = 00:01:09 . Memory (MB): peak = 2936.328 ; gain = 1612.668 ; free physical = 1102 ; free virtual = 7082
+INFO: [Common 17-1381] The checkpoint '/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/Lab8-01.runs/synth_1/MLZedboard_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file MLZedboard_wrapper_utilization_synth.rpt -pb MLZedboard_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 11 14:59:26 2025...

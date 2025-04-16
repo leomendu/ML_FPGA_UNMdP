@@ -1,0 +1,23 @@
+15:05:03 DEBUG : Logs will be stored at '/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/IDE.log'.
+15:05:04 INFO  : Launching XSCT server: xsct -n  -interactive /home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/temp_xsdb_launch_script.tcl
+15:05:04 INFO  : Registering command handlers for Vitis TCF services
+15:05:04 INFO  : Platform repository initialization has completed.
+15:05:06 INFO  : XSCT server has started successfully.
+15:05:06 INFO  : plnx-install-location is set to ''
+15:05:06 INFO  : Successfully done setting XSCT server connection channel  
+15:05:06 INFO  : Successfully done query RDI_DATADIR 
+15:05:06 INFO  : Successfully done setting workspace for the tool. 
+15:28:10 INFO  : Result from executing command 'getProjects': MLZedboard_wrapper
+15:28:10 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+15:28:11 WARN  : An unexpected exception occurred in the module 'platform project logging'
+15:28:11 INFO  : Platform 'MLZedboard_wrapper' is added to custom repositories.
+15:28:18 INFO  : Platform 'MLZedboard_wrapper' is added to custom repositories.
+16:05:37 DEBUG : Logs will be stored at '/home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/IDE.log'.
+16:05:37 INFO  : Launching XSCT server: xsct -n  -interactive /home/student/Documents/cursoML2025/git/ML_FPGA_UNMdP/labs/lab8/Lab8-01/temp_xsdb_launch_script.tcl
+16:05:38 INFO  : Registering command handlers for Vitis TCF services
+16:05:38 INFO  : Platform repository initialization has completed.
+16:05:38 INFO  : XSCT server has started successfully.
+16:05:38 INFO  : plnx-install-location is set to ''
+16:05:38 INFO  : Successfully done setting XSCT server connection channel  
+16:05:38 INFO  : Successfully done setting workspace for the tool. 
+16:05:38 INFO  : Successfully done query RDI_DATADIR 
